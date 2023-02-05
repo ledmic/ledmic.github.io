@@ -1,130 +1,45 @@
 <!DOCTYPE html>
 <html lang=en>
-	<title>Wumpus's Portfolio</title>
+	<title>Portfolio</title>
 	<link rel=stylesheet type=text/css href="./styles/greensteam/greensteam.css">
 
 	<main>
 		<nav>
 			<li><a href="">About</a></li>
 			<li><a href="https://www.moddb.com/members/ledmics">Moddb</a></li>
-				</ul>
+			<li><a href="source.html">Source Engine</a></li>
 			</li>
 		</nav>
 
 		<div class=window name="Portfolio">
 			<!--<div class="titlebar">Green Steam Theme</div>-->
 			<h1>My Work</h1>
-			<p>Hello! my name is <a href="https://en.wikipedia.org/wiki/Hunt_the_Wumpus">wumpus</a></p>
-			<p>my main work is Sourcemods, such as <a href="https://www.moddb.com/mods/arsenio/news/arsenio-dev-blog-1">Arsenio</a> and a few unannounced ones, such as Hollow Point and Heat Convection</p>
-			<p>This site acts as a way for me to showcase my projects, and will be updated accordingly.</p>
+			<p>Greetings! My name is Ledmics and I have a passion for programming. I am dedicated to expanding my skills and knowledge by exploring new programming languages. This page serves as a platform for me to showcase my projects and will be regularly updated to reflect my recent work.</p>
 		</div>
 
-		<div class="headless window" name="Steam">
-			<h1>Arsenio</h1>
-			<p>I haven't been on the arsenio team for very long and as such I dont have as <code>much</code> work to show for it</p>
-			<h2>Skydome</h2>
-			<p>I was responsible for implementing a Skydome shader into Arsenio, as can be viewed <a href="">here</a></p>
-			<p>This shader was a port of a Shadertoy shader, but required much adaptation to work in source, for example - i needed to implement checks for water, since the rendering of that broke the sky.</p>
-			<hr>
-			<h2>Devtools</h2>
-			<p>For source modding in general, I enjoy rewriting the old vgui tools in Qt - I am currently working on a total rewrite of the SDK authoring tools, and part-way through a tool for generation of colour correction.
-				Luckily, arsenio itself doesnt require any devtools made specifically for it, but im putting it in this catagory because I own the website, not you.
-			</p>
-		</div>
-
-
-		<div class=window-row>
+        <div class="headless window" name="Steam">
+            <h1>Python</h1>
+			<h2>Lambdapi</h2>
+            <p><a href="https://media.discordapp.net/attachments/1039972532897460327/1071592860194967642/image.png">This</a> is a python wrapper I developed for the social media site Lambdageneration, it simplifies automating the site to a couple of lines of code.</p>
+            <h2>PyEngine</h2>
+            <p>I have also attempted to create an engine inspired by those that power games such as hollow knight, this resulted in <a href="https://github.com/ledmic/Pyengine">Pyengine</a></p>
+            <h2>15 Minute code Challenges</h2>
+            <p>These are short challenges I do to teach myself a language faster, <a href="https://github.com/ledmic/CSS-Checker">This</a> is the first of that series, a quick program to check if a person owns a specific game on the online retail store steam.</p>
+            <hr>
+            <h1>C/C++ Projects</h1>
+            <h2>Raycasters</h2>
+            <p>I created a raycaster in an attempt to learn C, <a href="https://github.com/ledmic/OpenGL-Raycaster">This</a> was written 100% solo.</p>
+            <h2>Physics Engines</h2>
+            <p>I wanted to create a 2D physics engine, inspired by that of Jolt or Havok, the end result was <a href="https://github.com/ledmic/olcEngine-Physics">This</a>, which let the controller spawn balls with basic physics, and drag across lines to act as ramps.</p>
+            <h2>Console 3D Rendering</h2>
+            <p>More experiments to become familier with C++, <a href="https://github.com/ledmic/Console-3D-Renderer">This</a> is a console app that draws a spinning ascii cube.</p>
+        </div>
+        <div class=window-row>
 			<div>
-				<div class="window" name="Compiler tools">
-					<p>I have also been known to rewrite the source compiler tools, specifically vrad and vbsp</p>
-					<p>My work on vrad is mainly optimisation based, for example - in the hollowpoint branch of vrad, i have cut vrad times by ~25-30%</p>
+				<div class="window" name="About Me">
+					<p>I was introduced to programming at the age of six or seven by my father and have since been continuously honing my skills on a daily basis, driven by a desire to continually improve.</p>
 				</div>
 			</div>
 		<div>
-			<div class="half window" name="LOADING...">
-					<progress value="2" max="28"></progress>
-					I dont believe that I am anywhere near my potential, I can massively improve and I know it, thats why I think im only so little loaded.</p>
-				</div>
-		</div>
-
-<!--			
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-  dolor in reprehenderit in voluptate velit es se cillum dolore eu fugiat nulla pariatur.
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-  mollit anim id est laborum.
-			</pre>
-			<br>
-			<fieldset class=flex-row>
-				<style>.space-controls > * { margin-bottom: 16px; }</style>
-				<legend>Form Controls</legend>
-				<div class="flex-column space-controls">
-					<button>Button</button>
-					<label><input type=checkbox> Checkbox</label>
-					<input type=color>
-					<input type=date value="1998-11-19">
-					<input type=datetime-local value="1998-11-19T12:00">
-					<input type=email placeholder="gaben@valvesoftware.com">
-					<input type=file>
-					<input type=month value="1998-11">
-					<input type=number value=0>
-					<input type=password value=hunter2>
-					<div>
-						<label><input type=radio name=radio1 value=opt1 checked> Radio 1</label><br>
-						<label><input type=radio name=radio1 value=opt2> Radio 2</label>
-					</div>
-					<input type=range min=0 max=10 value=5 step=0.1 style="width: 200px;"">
-					<input type=range class=ticks min=0 max=10 value=5 step=1 style="width: 200px;"">
-				</div>
-				<div class="flex-column space-controls">
-					<input type=reset>
-					<input type=search placeholder=Search...>
-					<input type=submit>
-					<input type=tel value=1-800-FLOWERS>
-					<input type=text placeholder="Text">
-					<input type=time value="12:00">
-					<input type=url placeholder="https://example.com/">
-					<input type=week>
-					<textarea>Test</textarea>
-					<select>
-						<option value="volvo">Coke</option>
-						<option value="saab">Pepsi</option>
-						<option value="mercedes">Root Beer</option>
-						<option value="audi">RC Cola</option>
-					</select>
-					<input list="browsers" name="browser" id="browser">
-					<datalist id="browsers">
-						<option value="Edge">
-						<option value="Firefox">
-						<option value="Chrome">
-						<option value="Opera">
-						<option value="Safari">
-					</datalist>
-				</div>
-			</fieldset>
-		</div>
-		<div class="window headless">
-			<div class=titlebar>Window Title</div>
-			<p>You can also place a custom <code>titlebar</code>, anywhere you want, like the one in this headless window.</p>
-			<h1>Title</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-				dolor in reprehenderit in voluptate velit es se cillum dolore eu fugiat nulla pariatur.
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum.</p>
-		</div>
-		<div class=window name="Valve Archive">
-			<h1>Title</h1>
-			<h5>June 20, 2021</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-				dolor in reprehenderit in voluptate velit es se cillum dolore eu fugiat nulla pariatur.
-				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-				mollit anim id est laborum.</p>
-		</div -->
-
 	</main>
 </html>
